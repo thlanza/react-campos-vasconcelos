@@ -1,0 +1,69 @@
+.carrosselContainer {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.carrosselImage {
+    transition: opacity 0.3s ease-in-out;
+    position: relative;
+}
+
+.carrosselImage {
+    opacity: 1;
+}
+
+.carrosselImage {
+    display: block;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+}
+
+.carrosselHeader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    
+    margin: 0;
+    width: 80%;
+
+    text-align: center;
+
+    white-space: pre-line;
+    line-height: 0.95;
+    font-weight: 900;
+    font-size: clamp(2rem, 5vw, 5rem);
+
+    color: #e1b16a;
+    -webkit-text-stroke: 2px #ffffff;
+
+    text-shadow:
+        3px 3px 0 #000000,
+        5px 5px 10px rgba(0, 0, 0, 0.45);
+
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+}
+
+.visible {
+    opacity: 1;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.iconBox {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    right: 10%;
+}

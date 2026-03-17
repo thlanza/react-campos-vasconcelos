@@ -1,0 +1,28 @@
+.item {
+    list-style: none;
+}
+
+.link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.link:hover {
+    background-color: #727077;
+}
+
+.label {
+    line-height: 1;
+    color: #FFFFFF;
+}
+
+.active {
+    background-color: rgba(255, 255, 255, 0.12);
+}

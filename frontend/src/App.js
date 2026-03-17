@@ -1,8 +1,6 @@
-import logo from './logo.svg';
-import './App.css';
 import { useEffect, useState } from 'react';
 
-function App() {
+function Home() {
   const [name, setName] = useState('');
   useEffect(() => {
     const fetchTitulo = async () => {
@@ -23,4 +21,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
