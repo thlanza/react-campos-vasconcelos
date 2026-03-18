@@ -8,6 +8,7 @@ import AreasPage from './pages/AreasPage';
 import QuemSomosPage from './pages/QuemSomosPage';
 import NotFoundPage from './pages/404';
 import Layout from './pages/Layout';
+import Admin from './adminPages/AdminIndex';
 
 
 const router = createBrowserRouter([
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
   {
     path: '/quem-somos',
     element: <QuemSomosPage />
+  },
+  {
+    path: '/admin',
+    element: <Admin />
   }
   ]
   },

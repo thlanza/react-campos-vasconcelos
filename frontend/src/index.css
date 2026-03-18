@@ -1,3 +1,7 @@
+@import "big-screen.css";
+
+@import "cell-phone.css";
+
 body {
   background-color: #000000;
   color: #FEF2E4;
@@ -12,3 +16,4 @@ p {
 button {
   font-family: "Poppins", sans-serif;
 }
+

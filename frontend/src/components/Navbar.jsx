@@ -6,7 +6,7 @@ import { CgProfile } from "react-icons/cg";
 import { RiFolderSettingsLine } from "react-icons/ri";
 import { CiMail } from "react-icons/ci";
 import { MenuLink } from "./MenuLink";
-
+import { GrUserAdmin } from "react-icons/gr";
 
 export function Navbar() {
   return (
@@ -21,6 +21,7 @@ export function Navbar() {
         <MenuLink to="/contato" Icon={CgProfile} label="Contato" />
         <MenuLink to="/areas" Icon={RiFolderSettingsLine} label="Áreas de Atuação" />
         <MenuLink to="/quem-somos" Icon={CiMail} label="Quem Somos" />
+        <MenuLink to="/admin" Icon={GrUserAdmin} label="Admin" />
       </div>
     </nav>
   );

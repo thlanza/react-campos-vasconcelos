@@ -62,6 +62,7 @@ app.get('/conteudo', async (req, res) => {
     }
 });
 
+
 app.use(express.static(path.join(__dirname, './frontend/build')))
 
 app.listen(PORT, () => `Servindo na porta ${PORT}`)

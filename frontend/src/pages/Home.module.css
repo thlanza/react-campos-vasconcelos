@@ -1,11 +1,12 @@
 .wrapper {
-    margin: 0 230px;
+    width: min(100% - 64px, 1400px);
+    margin: 0 auto;
 }
 
 .myGrid {
     margin-top: 2%;
     display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    grid-template-columns: 1.1fr 0.9fr;
     gap: 2px;
     width: 100%;
     align-items: start;
@@ -14,6 +15,7 @@
 .left {
     grid-column: 1;
     min-width: 0;
+    max-width: 720px;
 }
 
 .right {
@@ -21,20 +23,22 @@
     min-width: 0;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
 }
 
-.righgt img {
+.right img {
     display: block;
-    max-width: 100%;
+    width: 100%;
+    max-width: 620px;
     height: auto;
 }
 
 .header {
-    font-size: 50px;
+    font-size: clamp(1.2rem, 2vw, 2rem);
     font-weight: bold;
 }
 
 .subheader {
-    font-size: 35px;
+    font-size: clamp(1.2rem, 2vw, 2rem);
     font-weight: 100;
 }
