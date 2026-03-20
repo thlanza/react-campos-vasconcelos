@@ -2,7 +2,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 230px;
+    
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 24px;
 }
 
 .iconList {
@@ -18,3 +21,18 @@
     height: auto;
     display: block;
 }
+
+@media only screen and (max-width: 768px) { 
+
+  .navbar {
+    flex-direction: column;
+ }
+  .iconList {
+    flex-direction: column;
+  }
+
+  .logo {
+    width: 270px;
+    height: auto;
+  }
+} 

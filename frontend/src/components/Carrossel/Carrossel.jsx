@@ -26,9 +26,9 @@ function Carrossel() {
     const key = image;
     switch (key) {
       case 1:
-        return 'SOLUÇÕES PERSONALIZADAS\nPARA O SEU NEGÓCIO'
+        return 'SOLUÇÕES\nPERSONALIZADAS\nPARA O SEU NEGÓCIO'
       case 2:
-        return 'EQUIPE\nALTAMENTE\nQUALIFICADA';
+        return 'ADVOGADOS\nALTAMENTE\nQUALIFICADOS';
       case 3:
         return 'SOLUÇÕES QUE\nCABEM NO\nSEU BOLSO';
     }

@@ -6,22 +6,23 @@ import { CgProfile } from "react-icons/cg";
 import { RiFolderSettingsLine } from "react-icons/ri";
 import { CiMail } from "react-icons/ci";
 import { MenuLink } from "./MenuLink";
-import { GrUserAdmin } from "react-icons/gr";
+import useMediaQuery from "../hooks/useMediaQuery";
 
-export function Navbar() {
+export function Navbar({ aoClicar }) {
+  const isMobile = useMediaQuery("(max-width: 1200px)");
+  const aoClicarCallback = isMobile ? aoClicar : () => {}
   return (
     <nav className={styles.navbar}>
-      <img 
+       <img 
         src={"logo-campos.png"} 
         alt="Logo da Campos Vasconcelos" 
         className={styles.logo}
       />
       <div className={styles.iconList}>
-        <MenuLink to="/" Icon={FaHome} label="Home" />
-        <MenuLink to="/contato" Icon={CgProfile} label="Contato" />
-        <MenuLink to="/areas" Icon={RiFolderSettingsLine} label="Áreas de Atuação" />
-        <MenuLink to="/quem-somos" Icon={CiMail} label="Quem Somos" />
-        <MenuLink to="/admin" Icon={GrUserAdmin} label="Admin" />
+        <MenuLink to="/" Icon={FaHome} label="Home" onClick={aoClicarCallback}/>
+        <MenuLink to="/contato" Icon={CgProfile} label="Contato" onClick={aoClicarCallback}/>
+        <MenuLink to="/areas" Icon={RiFolderSettingsLine} label="Áreas de Atuação" onClick={aoClicarCallback}/>
+        <MenuLink to="/quem-somos" Icon={CiMail} label="Quem Somos" onClick={aoClicarCallback}/>
       </div>
     </nav>
   );

@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import styles from "./MenuLink.module.css";
 
-export function MenuLink({ to, Icon, label }) {
+export function MenuLink({ to, Icon, label, onClick }) {
     const iconColor = () => {
         console.log("to", to);
         if (to === "/") {
@@ -14,7 +14,7 @@ export function MenuLink({ to, Icon, label }) {
         return "#E1B16A";
     }
     return (
-        <li className={styles.item}>
+        <li className={styles.item} onClick={onClick}>
             <NavLink
                 to={to}
                 className={({ isActive}) => 

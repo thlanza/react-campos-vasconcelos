@@ -1,24 +1,19 @@
-import { useEffect, useState } from 'react';
 import Carrossel from '../components/Carrossel/Carrossel';
+import useMediaQuery from '../hooks/useMediaQuery';
 import style from './Home.module.css';
 function HomePage() {
-  const [name, setName] = useState('');
-  useEffect(() => {
-    const fetchTitulo = async () => {
-      try {
-      const response = await fetch('http://localhost:5000/conteudo');
-      const conteudo = await response.json();
-      setName(conteudo.titulo.name);
-      } catch (e) {
-        console.log("Error", e);
-      }
-    }
-    fetchTitulo();
-  }, []);
+  const isMobile = useMediaQuery("(max-width: 1200px)");
   return (
     <div className={style.wrapper}>
-      <p>{name}</p>
-      <Carrossel />
+      {isMobile ? null : <Carrossel />}
+      {isMobile ?      
+      (
+      <img 
+          src={"logo-campos.png"} 
+          alt="Logo da Campos Vasconcelos" 
+          className={style.logo}
+            />
+      ) : null}
       <div className={style.myGrid}>
         <div className={style.left}>
           <p className={style.header}>Conte com uma equipe de advogados especialistas e evite a cobrança abusiva dos bancos.</p>
@@ -28,7 +23,6 @@ function HomePage() {
         <div className={style.right}>
           <img src={"hero-jane.png"} alt="Foto da Jane" />
         </div>
-  
       </div>
     </div>
   );
