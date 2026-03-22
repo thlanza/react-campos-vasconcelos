@@ -1,0 +1,19 @@
+.areaContainer {
+    border: 0.2rem solid white;
+    padding: 0.4rem 0.6rem;
+    min-height: 20rem;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.areaContainer h1 {
+    margin: 0.4rem 0 0.6rem 0;
+}
+
+.areaContainer p {
+    margin-top: auto;
+    margin-bottom: auto;
+    line-height: 1.4;
+}
