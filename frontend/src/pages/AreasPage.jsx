@@ -1,7 +1,6 @@
 import AreaCard from "../components/AreaCard/AreaCard";
 import { areaObjects } from "../components/AreaCard/areaObjects";
 import useMediaQuery from "../hooks/useMediaQuery";
-
 import styles from './AreasPage.module.css';
 
 function AreasPage() {

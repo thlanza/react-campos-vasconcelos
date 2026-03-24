@@ -1,0 +1,27 @@
+.wrapper {
+    width: min(100% - 4rem, 87.5rem);
+    margin: 0 auto;
+}
+
+.firstWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroContato {
+    width: 95%;
+    height: auto;
+}
+
+.header1 {
+    font-size: 2.5rem;
+}
+
+.content {
+    font-size: 1.1rem;
+}
+
+.asterisco {
+    color: red;
+}
