@@ -5,6 +5,7 @@ import useMediaQuery from '../hooks/useMediaQuery';
 import styles from './Layout.module.css';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { AiOutlineClose } from 'react-icons/ai';
+import Footer from '../components/Footer/Footer';
 
 export default function Layout() {
   const [nav, setNav] = useState(false);
@@ -17,6 +18,7 @@ export default function Layout() {
         <main className="page-content">
           <Outlet />
         </main>
+        <Footer />
       </>
     );
   }
@@ -38,6 +40,7 @@ export default function Layout() {
           </div>
 
           <Outlet />
+          <Footer />
         </>
       )}
     </div>
