@@ -1,0 +1,64 @@
+.wrapper {
+    width: min(100% - 4rem, 75rem);
+    margin: 0 auto;
+    padding: 3rem 0 5rem;
+}
+
+.hero {
+    margin-bottom: 2.5rem;
+}
+
+.title {
+    margin: 0 0 1rem 0;
+    font-size: clamp(2rem, 4vw, 3.5rem);
+    line-height: 1.05;
+}
+
+.subtitle {
+    margin: 0 0 0.75rem 0;
+    max-width: 52rem;
+    line-height: 1.6;
+}
+
+.lastUpdate {
+    margin: 0;
+    opacity: 0.85;
+}
+
+.section {
+    margin-top: 2rem;
+    padding-top: 1.25rem;
+    border-top: 0.0625rem solid rgba(255, 255, 255, 0.14);
+}
+
+.section h2 {
+    margin: 0 0 0.85rem 0;
+    font-size: 1.35rem;
+    line-height: 1.2;
+}
+
+.section p {
+    margin: 0 0 0.9rem 0;
+    line-height: 1.7;
+}
+
+.section ul {
+    margin: 0.5rem 0 0.9rem 1.25rem;
+    padding: 0;
+}
+
+.section li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 48rem) {
+    .wrapper {
+        width: min(100% - 1.5rem, 75rem);
+        padding: 2rem 0 3rem;
+    }
+
+    .section h2 {
+        font-size: 1.2rem;
+    }
+}

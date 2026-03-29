@@ -8,6 +8,8 @@ import AreasPage from './pages/AreasPage';
 import QuemSomosPage from './pages/QuemSomosPage';
 import NotFoundPage from './pages/404';
 import Layout from './pages/Layout';
+import PoliticaPrivacidadePage from './pages/PoliticaPrivacidade';
+import TermosDeUsoPage from './pages/TermosDeUsoPage';
 
 const router = createBrowserRouter([
   {
@@ -29,7 +31,15 @@ const router = createBrowserRouter([
   {
     path: '/quem-somos',
     element: <QuemSomosPage />
-  }
+  },
+  {
+    path: '/politica-privacidade',
+    element: <PoliticaPrivacidadePage />
+  },
+  {
+    path: '/termos-de-uso',
+    element: <TermosDeUsoPage />
+  },
   ]
   },
   {

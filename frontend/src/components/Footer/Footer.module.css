@@ -18,6 +18,12 @@
     justify-self: end;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+    margin-left: 0.6rem;
+}
+
 .iconContainer {
     display: inline-flex;
     align-items: center;
@@ -35,10 +41,15 @@
 .gridRow {
     display: flex;
     align-items: center;
+    gap: 0.6rem;
+    margin-bottom: 0.8rem;
 }
 
 .paragraph {
-    margin-left: 0.2rem;
+    margin: 0;
+    text-decoration: none;
+    color: white;
+    margin-left: 0.6rem;
 }
 
 .tituloComUnderline {

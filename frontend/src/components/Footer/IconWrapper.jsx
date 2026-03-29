@@ -2,11 +2,11 @@ import { Link } from "react-router-dom";
 import styles from './Footer.module.css';
 import { FaArrowRight } from "react-icons/fa";
 
-function ArrowRightIcon() {
+function IconWrapper({ Icon }) {
 
   return (
     <div className={styles.iconContainer}>
-        <FaArrowRight 
+        <Icon 
             className={styles.icon}
             color={"#000000"}
         />
@@ -14,4 +14,4 @@ function ArrowRightIcon() {
   );
 }
 
-export default ArrowRightIcon;
+export default IconWrapper;
