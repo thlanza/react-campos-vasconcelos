@@ -9,28 +9,28 @@ jobs:
 
     steps:
       - name: "Baixar o código" 
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: "Copiar arquivos para VPS"
-        uses: appleboy/scp-action@v0.1.7
+        uses: appleboy/scp-action@v1
         with:
-          host: "147.93.12.242"
+          host: ${{ secrets.HOST }}
           username: "root"
           password: ${{ secrets.PASSWORD }}
           source: "."
           target: "/var/www/www.camposvasconcelos.com.br"
 
       - name: "Build da aplicação"
-        uses: appleboy/ssh-action@v1.0.3
+        uses: appleboy/ssh-action@v1
         with:
-          host: "147.93.12.242"
+          host: ${{ secrets.HOST }}
           username: "root"
           password: ${{ secrets.PASSWORD }}
           script: |
             cd /var/www/www.camposvasconcelos.com.br
             npm install
             chown -R www-data:www-data .
-            cd /frontend
+            cd frontend
             npm run build
             
         
