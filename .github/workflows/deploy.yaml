@@ -6,6 +6,7 @@ on:
 jobs:
   build_deploy:
     runs-on: ubuntu-latest
+    environment: main
 
     steps:
       - name: "Baixar o código" 
