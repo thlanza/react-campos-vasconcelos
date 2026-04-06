@@ -33,6 +33,5 @@ jobs:
             chown -R www-data:www-data .
             cd frontend
             npm install
-            npm run build
             
         
